@@ -6,6 +6,7 @@ const visibleMore = document.querySelector('.btn-more');
 
 
 
+
 visibleMore.addEventListener('click',  () => {
     for (let i = 0; i < allElementSlider.length; i++) {
         allElementSlider[i].classList.toggle('visible');

@@ -7,27 +7,9 @@
     <title>CPS - Ремонт техники</title>
 </head>
 <body>
-    <div class="container">
-        <header class="header header_style">
-            <nav class="header__nav header__nav_style">
-                <div class="header__burger-menu header__burger-menu_style">
-                    <button class="burger burger_320_440_p pointer"></button>
-                    <div class="divider hidd_320_768"></div>  <!--скрыт до 768px-->
-                    <div class="logo"></div>
-                </div>
-    
-                <div class="header__left-nav header__left_nav_style">
-                    <button class="icon-call pointer hidd_320_768"></button> <!--скрыт до 768px-->
-                    <button class="icon-message pointer hidd_320_768"></button> <!--скрыт до 768px-->
-                    <button class="icon-profile pointer hidd_320_768"></button> <!--скрыт до 768px-->
-                    <div class="divider"></div>
-                    <button class="icon-repair pointer"></button>
-                    <button class="icon-checkstatus pointer"></button>
-                </div>
-            </nav>
-        </header>
-
-<!-- burger -->
+    <div class="help-lay"></div>
+    <div class="main-wrapper">
+        <!-- burger -->
         <div class="burger-container">
             <div class="burger-panel">
                 <div class="burger-panel__head">
@@ -36,8 +18,8 @@
                     <button class="icon-search pointer filter"></button>
                 </div>
                 <ul class="burger-panel__links">
-                    <li><a href="#" class="burger-panel__link burger-panel__link_active pointer">Ремонт техники</a></li>
-                    <li><a href="#" class="burger-panel__link pointer">Услуги и сервисы</a></li>
+                    <li><a href="#" class="burger-panel__link pointer">Ремонт техники</a></li>
+                    <li><a href="#" class="burger-panel__link burger-panel__link_activepointer">Услуги и сервисы</a></li>
                     <li><a href="#" class="burger-panel__link pointer">Корпоративным клиентам</a></li>
                     <li><a href="#" class="burger-panel__link pointer">Продавцам техники</a></li>
                     <li><a href="#" class="burger-panel__link pointer">Партнерам</a></li>
@@ -64,9 +46,32 @@
                     </div>
                 </div>
             </div>
+
+    </div>
+    
+    <div class="container">
+        <div class="header-wrapper-help">
+            <header class="header header_style">
+                <nav class="header__nav header__nav_style">
+                    <div class="header__burger-menu header__burger-menu_style">
+                        <button class="burger burger_320_440_p pointer"></button>
+                        <div class="divider hidd_320_768"></div>  <!--скрыт до 768px-->
+                        <div class="logo"></div>
+                    </div>
         
         
-        </div>
+                    <div class="header__left-nav header__left_nav_style">
+                        <button class="icon-call pointer hidd_320_768"></button> <!--скрыт до 768px-->
+                        <button class="icon-message pointer hidd_320_768"></button> <!--скрыт до 768px-->
+                        <button class="icon-profile pointer hidd_320_768"></button> <!--скрыт до 768px-->
+                        <div class="divider"></div>
+                        <button class="icon-repair pointer"></button>
+                        <button class="icon-checkstatus pointer"></button>
+                    </div>
+                </nav>
+            </header>
+        
+        
         <main class="main_style">
     
             <div class="title title_style">
@@ -84,8 +89,6 @@
                         <span class="title__icon-text title__icon-text_style">Статус ремонта</span>
                         <button class="icon-checkstatus pointer"></button>
                     </label>
-    
-    
                 </div>
             </div>
     
@@ -117,8 +120,8 @@
                 </div>
             </section>
         </main>
-    </div>
     
+    </div>
 <!-- первый слайдер Ремонт различных видов техники -->
 <div class="repair-brands">
     <div class="slider-header repair-brands__header">
@@ -170,73 +173,76 @@
             </div>
             <div class="swiper price-slider__swiper">
                 <div class="swiper-wrapper repair-brands__wrapper">
-                    <a class="swiper-slide price-slider__slide" href="#">
+                    <div class="swiper-slide price-slider__slide">
                         <div class="price-slider__slide-card">
                             <span class="price-slider__slide-sup">Ремонтные услуги</span>
-                            <span class="price-slider__slide-sub">Тестирование с выдачей технического заключения</span>
+                            <span class="price-slider__slide-sub price-slider_double-heigh">Тестирование с выдачей технического заключения</span>
                             <span class="price-slider__slide-sup">Цена</span>
                             <span class="price-slider__slide-sub">1 000 ₽</span>
                             <span class="price-slider__slide-sup">Срок</span>
                             <span class="price-slider__slide-sub">30-120 мин</span>
+                            <button class="price-slider__btn-order">Заказать <i class="disclaimer__arrow-right"></i></button>
                         </div>
-                    </a>
-                    <a class="swiper-slide price-slider__slide" href="#">
+                    </div>
+                    <div class="swiper-slide price-slider__slide">
                         <div class="price-slider__slide-card">
                             <span class="price-slider__slide-sup">Ремонтные услуги</span>
-                            <span class="price-slider__slide-sub">Диагностика</span>
+                            <span class="price-slider__slide-sub price-slider_double-heigh">Диагностика</span>
                             <span class="price-slider__slide-sup">Цена</span>
                             <span class="price-slider__slide-sub">Бесплатно</span>
                             <span class="price-slider__slide-sup">Срок</span>
                             <span class="price-slider__slide-sub">30 мин</span>
+                            <button class="price-slider__btn-order">Заказать <i class="disclaimer__arrow-right"></i></button>
                         </div>
-                    </a>
-                    <a class="swiper-slide price-slider__slide" href="#">
+                    </div>
+                    <div class="swiper-slide price-slider__slide">
                         <div class="price-slider__slide-card">
                             <span class="price-slider__slide-sup">Ремонтные услуги</span>
-                            <span class="price-slider__slide-sub">Замена дисплея</span>
+                            <span class="price-slider__slide-sub price-slider_double-heigh">Замена дисплея</span>
                             <span class="price-slider__slide-sup">Цена</span>
                             <span class="price-slider__slide-sub">1 000 ₽</span>
                             <span class="price-slider__slide-sup">Срок</span>
                             <span class="price-slider__slide-sub">30-120 мин</span>
+                            <button class="price-slider__btn-order">Заказать <i class="disclaimer__arrow-right"></i></button>
                         </div>
-                    </a>
-                    <a class="swiper-slide price-slider__slide" href="#">
+                    </div>
+                    <div class="swiper-slide price-slider__slide">
                         <div class="price-slider__slide-card">
                             <span class="price-slider__slide-sup">Ремонтные услуги</span>
-                            <span class="price-slider__slide-sub">Замена полифонического динамика</span>
+                            <span class="price-slider__slide-sub price-slider_double-heigh">Замена полифонического динамика</span>
                             <span class="price-slider__slide-sup">Цена</span>
                             <span class="price-slider__slide-sub">1 000 ₽</span>
                             <span class="price-slider__slide-sup">Срок</span>
                             <span class="price-slider__slide-sub">30-120 мин</span>
+                            <button class="price-slider__btn-order">Заказать <i class="disclaimer__arrow-right"></i></button>
                         </div>
-                    </a>
-                    <a class="swiper-slide price-slider__slide" href="#">
+                    </div>
+                    <div class="swiper-slide price-slider__slide">
                         <div class="price-slider__slide-card">
                             <span class="price-slider__slide-sup">Ремонтные услуги</span>
-                            <span class="price-slider__slide-sub">Замена программного обеспечения</span>
+                            <span class="price-slider__slide-sub price-slider_double-heigh">Замена программного обеспечения</span>
                             <span class="price-slider__slide-sup">Цена</span>
                             <span class="price-slider__slide-sub">1 000 ₽</span>
                             <span class="price-slider__slide-sup">Срок</span>
                             <span class="price-slider__slide-sub">30-120 мин</span>
+                            <button class="price-slider__btn-order">Заказать <i class="disclaimer__arrow-right"></i></button>
                         </div>
-                    </a>
-                    <a class="swiper-slide price-slider__slide" href="#">
+                    </div>
+                    <div class="swiper-slide price-slider__slide">
                         <div class="price-slider__slide-card">
                             <span class="price-slider__slide-sup">Ремонтные услуги</span>
-                            <span class="price-slider__slide-sub">Тестирование с выдачей технического заключения</span>
+                            <span class="price-slider__slide-sub price-slider_double-heigh">Тестирование с выдачей технического заключения</span>
                             <span class="price-slider__slide-sup">Цена</span>
                             <span class="price-slider__slide-sub">Бесплатно</span>
                             <span class="price-slider__slide-sup">Срок</span>
                             <span class="price-slider__slide-sub">30-120 мин</span>
+                            <button class="price-slider__btn-order">Заказать <i class="disclaimer__arrow-right"></i></button>
                         </div>
-                    </a>
-
+                    </div>
                 </div>
                 <div class="swiper-pagination"></div>
-                <button class="btn-more close">Показать все</button>
             </div>
         </div>
-
         <!-- Дисклеймер -->
         <div class="disclaimer">
             <div class="disclaimer__container">
@@ -264,7 +270,9 @@
                 </div>
             </div>
         </footer>
+        </div>
 
+    </div>
     </body>
 </body>
 </html>

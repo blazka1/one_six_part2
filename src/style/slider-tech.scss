@@ -43,10 +43,15 @@
         flex-direction: column;
         border-bottom: 1px solid #D9FFF5;
         background-color: #F8F8F8;
+       
+    }
+    &__swiper.active {
+        z-index: -1 !important;
     }
     &__slide {
         padding: 16px;
         background-color: #FFFFFF;
         margin-bottom: 7px;
     }
+
 }
